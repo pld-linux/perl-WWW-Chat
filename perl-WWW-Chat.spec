@@ -39,8 +39,8 @@ Ten pakiet zawiera program webchatpp wraz z modu³ami pomocniczymi
 WWW::Chat i WWW::Chat::Processor.
 
 webchatpp jest preprocesorem t³umacz±cym skrypty chata na zwyk³e
-skrypty perla u¿ywaj±ce modu³ów libwww. Utworzony skrypt jest
-przekazywany do perla, który przeprowadza dialog. Skrypty chata
+skrypty Perla u¿ywaj±ce modu³ów libwww. Utworzony skrypt jest
+przekazywany do Perla, który przeprowadza dialog. Skrypty chata
 s± przydatne do tworzenia testów aplikacji WWW lub automatyzacji
 dialogów z aplikacjami WWW.
 
