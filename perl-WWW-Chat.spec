@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	WWW
 %define	pnam	webchat
-Summary:	WWW::Chat perl modules for processing web chat scripts
-Summary(pl):	Modu³y perla WWW::Chat - do przetwarzania skryptów chata
+Summary:	WWW::Chat Perl modules - processing web chat scripts
+Summary(pl):	Modu³y Perla WWW::Chat - przetwarzanie skryptów chata
 Name:		perl-WWW-Chat
 Version:	0.64
 Release:	2
