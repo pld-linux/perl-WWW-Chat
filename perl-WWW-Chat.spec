@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	WWW
-%define	pnam	webchat
+%define		pdir	WWW
+%define		pnam	webchat
 Summary:	WWW::Chat Perl modules - processing web chat scripts
 Summary(pl):	Modu³y Perla WWW::Chat - przetwarzanie skryptów chata
 Name:		perl-WWW-Chat
