@@ -5,7 +5,7 @@ Summary:	WWW::Chat perl modules for processing web chat scripts
 Summary(pl):	Modu³y perla WWW::Chat - do przetwarzania skryptów chata
 Name:		perl-WWW-Chat
 Version:	0.64
-Release:	1
+Release:	2
 License:	Artistic or GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pnam}-%{version}.tar.gz
@@ -14,7 +14,7 @@ BuildRequires:	perl-Data-Dump >= 0.01
 BuildRequires:	perl-HTML-Parser >= 2.21
 BuildRequires:	perl-URI >= 1.00
 BuildRequires:	perl-libwww >= 5.47
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -42,7 +42,8 @@ dialogów z aplikacjami WWW.
 %setup -q -n %{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make}
 
 %install
@@ -58,6 +59,6 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc Changes README manual_test.pl
 %attr(755,root,root) %{_bindir}/*
-%{perl_sitelib}/WWW/Chat.pm
-%{perl_sitelib}/WWW/Chat
+%{perl_vendorlib}/WWW/Chat.pm
+%{perl_vendorlib}/WWW/Chat
 %{_mandir}/man[13]/*
