@@ -1,3 +1,7 @@
+#
+# Conditional build:
+%bcond_without	tests	# do not perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	WWW
 %define	pnam	webchat
@@ -6,7 +10,8 @@ Summary(pl):	Modu³y Perla WWW::Chat - przetwarzanie skryptów chata
 Name:		perl-WWW-Chat
 Version:	0.64
 Release:	2
-License:	Artistic or GPL
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pnam}-%{version}.tar.gz
 # Source0-md5:	1b8ebf6aa942dfd1c79ce6dff7bae134
@@ -46,6 +51,8 @@ dialogów z aplikacjami WWW.
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
 %{__make}
+
+%{?with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
