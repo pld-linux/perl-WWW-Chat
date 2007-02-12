@@ -6,7 +6,7 @@
 %define		pdir	WWW
 %define		pnam	webchat
 Summary:	WWW::Chat Perl modules - processing web chat scripts
-Summary(pl):	Modu≥y Perla WWW::Chat - przetwarzanie skryptÛw chata
+Summary(pl.UTF-8):   Modu≈Çy Perla WWW::Chat - przetwarzanie skrypt√≥w chata
 Name:		perl-WWW-Chat
 Version:	0.64
 Release:	3
@@ -34,15 +34,15 @@ webchatpp is feed to perl it will perform the chatting. Chat scripts
 are useful for setting up test suites for web applications or just to
 automate dialogues with web applications.
 
-%description -l pl
-Ten pakiet zawiera program webchatpp wraz z modu≥ami pomocniczymi
+%description -l pl.UTF-8
+Ten pakiet zawiera program webchatpp wraz z modu≈Çami pomocniczymi
 WWW::Chat i WWW::Chat::Processor.
 
-webchatpp jest preprocesorem t≥umacz±cym skrypty chata na zwyk≥e
-skrypty Perla uøywaj±ce modu≥Ûw libwww. Utworzony skrypt jest
-przekazywany do Perla, ktÛry przeprowadza dialog. Skrypty chata
-s± przydatne do tworzenia testÛw aplikacji WWW lub automatyzacji
-dialogÛw z aplikacjami WWW.
+webchatpp jest preprocesorem t≈ÇumaczƒÖcym skrypty chata na zwyk≈Çe
+skrypty Perla u≈ºywajƒÖce modu≈Ç√≥w libwww. Utworzony skrypt jest
+przekazywany do Perla, kt√≥ry przeprowadza dialog. Skrypty chata
+sƒÖ przydatne do tworzenia test√≥w aplikacji WWW lub automatyzacji
+dialog√≥w z aplikacjami WWW.
 
 %prep
 %setup -q -n %{pnam}-%{version}
