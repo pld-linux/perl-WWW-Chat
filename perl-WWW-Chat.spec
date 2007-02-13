@@ -6,7 +6,7 @@
 %define		pdir	WWW
 %define		pnam	webchat
 Summary:	WWW::Chat Perl modules - processing web chat scripts
-Summary(pl.UTF-8):   Moduły Perla WWW::Chat - przetwarzanie skryptów chata
+Summary(pl.UTF-8):	Moduły Perla WWW::Chat - przetwarzanie skryptów chata
 Name:		perl-WWW-Chat
 Version:	0.64
 Release:	3
