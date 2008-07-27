@@ -9,7 +9,7 @@ Summary:	WWW::Chat Perl modules - processing web chat scripts
 Summary(pl.UTF-8):	Moduły Perla WWW::Chat - przetwarzanie skryptów chata
 Name:		perl-WWW-Chat
 Version:	0.64
-Release:	3
+Release:	4
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
