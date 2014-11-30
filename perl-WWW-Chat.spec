@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	WWW
 %define		pnam	webchat
+%include	/usr/lib/rpm/macros.perl
 Summary:	WWW::Chat Perl modules - processing web chat scripts
 Summary(pl.UTF-8):	Moduły Perla WWW::Chat - przetwarzanie skryptów chata
 Name:		perl-WWW-Chat
@@ -15,10 +15,11 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pnam}-%{version}.tar.gz
 # Source0-md5:	1b8ebf6aa942dfd1c79ce6dff7bae134
-BuildRequires:	perl-devel >= 1:5.8.0
+URL:		http://search.cpan.org/dist/webchat/
 BuildRequires:	perl-Data-Dump >= 0.01
 BuildRequires:	perl-HTML-Parser >= 2.21
 BuildRequires:	perl-URI >= 1.00
+BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	perl-libwww >= 5.47
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
@@ -40,9 +41,9 @@ WWW::Chat i WWW::Chat::Processor.
 
 webchatpp jest preprocesorem tłumaczącym skrypty chata na zwykłe
 skrypty Perla używające modułów libwww. Utworzony skrypt jest
-przekazywany do Perla, który przeprowadza dialog. Skrypty chata
-są przydatne do tworzenia testów aplikacji WWW lub automatyzacji
-dialogów z aplikacjami WWW.
+przekazywany do Perla, który przeprowadza dialog. Skrypty chata są
+przydatne do tworzenia testów aplikacji WWW lub automatyzacji dialogów
+z aplikacjami WWW.
 
 %prep
 %setup -q -n %{pnam}-%{version}
